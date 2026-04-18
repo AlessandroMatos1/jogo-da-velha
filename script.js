@@ -142,7 +142,9 @@ function trocarModo() {
 }
 
 function zerarPlacar() {
-  console.log('zerei')
+ pontos = { X: 0, O: 0, empate: 0 };
+ atualizarPlacar();
+ reiniciarRodada();
 }
 
 celulas.forEach(celula => celula.addEventListener('click', jogar));
